@@ -1,19 +1,17 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Calculator1;
-
-namespace UnitTestDeviding
+namespace UnitTestMinus
 {
     [TestClass]
-    public class UnitTestDeviding
+    public class TestMinus
     {
         [TestMethod]
-        public void TestMethod4()
+        public void Minus()
         {
             Calculator x = new Calculator();
-            float d = x.Dividing(56, 8);
-            Assert.AreEqual(d, 7); 
-
+            float d = x.Minus(25,5);
+            Assert.AreEqual(20,d);
         }
     }
 }

@@ -5,10 +5,10 @@ using Calculator1;
 namespace UnitTestMultiply
 {
     [TestClass]
-    public class UnitTestMultiplication
+    public class TestMultiplication
     {
         [TestMethod]
-        public void TestMethod3()
+        public void Multiply()
         {
             Calculator x = new Calculator();
             float d = x.Multiply(5, 8);

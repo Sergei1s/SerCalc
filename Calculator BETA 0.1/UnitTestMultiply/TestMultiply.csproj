@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BB7D123E-9A7E-43E1-8D0B-1A33DCE20B63}</ProjectGuid>
+    <ProjectGuid>{BE143E0A-AE45-4A2C-BFF0-D189F50E7219}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UnitTestDeviding</RootNamespace>
-    <AssemblyName>UnitTestDeviding</AssemblyName>
+    <RootNamespace>UnitTestMultiply</RootNamespace>
+    <AssemblyName>UnitTestMultiply</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,7 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTestDeviding.cs" />
+    <Compile Include="TestMultiplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
