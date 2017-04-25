@@ -50,11 +50,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TestSimpleCalc.cs" />
+    <Compile Include="CalculatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApplication1\Calculator.csproj">
+    <ProjectReference Include="..\Calculator\Calculator.csproj">
       <Project>{fa3c3d28-d650-4de6-8273-15cf4a73ee47}</Project>
       <Name>Calculator</Name>
     </ProjectReference>
