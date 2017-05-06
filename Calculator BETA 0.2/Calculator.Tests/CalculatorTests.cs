@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Calculator1;
 
@@ -9,47 +10,43 @@ namespace UnitTestSimple
     public class TestSimpleCalc
     {
         [TestMethod]
-        public void addition()
+        public void  ShouldPlusTwoVariablesTest()
         {
-            Calculator Calc = new Calculator();
-            float result = Calc.Plus(10, 20);
+            var calc = new Calculator();
+            var result = calc.Plus(10, 20);
             Assert.AreEqual(30, result);
         }
 
         [TestMethod]
-        public void subtraction()
+        public void ShouldSubtractTwoVariablesTest()
         {
-            Calculator Calc = new Calculator();
-            float result = Calc.Minus(25, 5);
+            var calc = new Calculator();
+            var result = calc.Minus(25, 5);
             Assert.AreEqual(20, result);
         }
 
-        
-
-
         [TestMethod]
-        public void division()
+        public void SouldDivideTwoVariablesTest()
         {
-            Calculator Calc = new Calculator();
-            float result = Calc.Dividing(56, 8);
+            var calc = new Calculator();
+            var result = calc.Divide(56, 8);
             Assert.AreEqual(result, 7);
-
+        }
+        [TestMethod]
+        [ExpectedException(typeof(DivideByZeroException))]
+        public void ShouldRaiseExeption_WhenDeliverEqualsZero_Test()
+        {
+            var calc = new Calculator();
+            var result = calc.Divide(56, 0);
         }
 
-
-
-
-
-
         [TestMethod]
-        public void multiplication()
+        public void ShouldMultiplyTwoVariablesTest()
         {
-            Calculator Calc = new Calculator();
-            float result = Calc.Multiply(5, 8);
+            var calc = new Calculator();
+            var result = calc.Multiply(5, 8);
             Assert.AreEqual(40, result);
         }
     }
 }
-    
-
-
+  

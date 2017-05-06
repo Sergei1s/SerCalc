@@ -1,4 +1,6 @@
-﻿namespace Calculator1
+﻿using System;
+
+namespace Calculator1
 
 {
     public class Calculator
@@ -6,23 +8,25 @@
         private char _oper;
 
 
-        public float Plus(float x, float y)
+        public double Plus(double x, double y)
         {
             return x + y;
         }
 
-        public float Minus(float x, float y)
+        public double Minus(double x, double y)
         {
             return x - y;
         }
 
-        public float Multiply(float x, float y)
+        public double Multiply(double x, double y)
         {
             return x * y;
         }
 
-        public float Dividing(float x, float y)
+        public double Divide(double x, double y)
         {
+            if (y == 0)
+                throw new DivideByZeroException();
             return x / y;
         }
 
